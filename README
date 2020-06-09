@@ -1,0 +1,12 @@
+Add the following to your /opt/xymon/client/etc/clientlaunch.cfg
+
+[xymon-apisec-gw]
+        ENVFILE $XYMONCLIENTHOME/etc/xymonclient.cfg
+        CMD $XYMONCLIENTHOME/ext/xymon-apisec-gw.sh
+        LOGFILE $XYMONCLIENTHOME/logs/xymon-apisec-gw.log
+        INTERVAL 5m
+
+put the script here
+/opt/xymon/client/ext/xymon-apisec-gw.sh
+
+chmod a+x xymon-apisec-gw.sh
